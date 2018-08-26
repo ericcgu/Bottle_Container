@@ -3,6 +3,8 @@ version: '3'
 services:
   web:
     container_name: web
+    volumes:
+      - './web:/home/project/bottle/'
     build: ./web
     ports:
       - "8080:8080"
