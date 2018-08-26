@@ -4,7 +4,6 @@ from bottle import Bottle, route, run
 app = Bottle()
 
 #Basics
-
 @route('/')
 def hello_world():
     return "Hello World!!"
